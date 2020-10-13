@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王珺QiiQii的个人网站</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--切换图片js-->
+    <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+    var cot=0;//设置一个计数器，初始值为0；作用是用来监听点击切换的时候哪一个图片应该隐藏或者显示
+    function nex(){  
+    if(cot<=2){    
+    $('.imgs img').eq(cot).animate({'margin-left':'-481px'},500);    
+    cot++;  
+    }
+    }
+    function pre(){  
+    if(cot>0){    
+    cot--;    
+    $('.imgs img').eq(cot).animate({'margin-left':'0'},500);  
+    }
+    }
+    </script>
+    <link rel="Shortcut Icon" href="./img/logo_ico.ico" type="image/x-icon" />
+</head>
+<body>
+    <div class="nav_bar" id="nav">
+        <!--导航-->  
+        <ul class="char_left">
+            <li><a href="#ui">UI/UX</a></li>
+            <li><a href="#me">关于我</a></li>
+            <li><a href="#c4d">C4D</a></li>
+        </ul>
+        <img class="logo" src="img/logo.png"/>
+        <ul class="char_right">
+            <li><a href="#illa">矢量插画</a></li>
+            <li><a href="#ani">动效</a></li>
+            <li><a href="#paint">手绘</a></li>
+        </ul>
+    </div>
+
+    <div class="home">
+        <!--主页-->
+        <img class="home_bg" src="img/home_bg.png"/>
+        <div style="width:1440px;margin:auto;margin-top:23px;overflow:hidden;" > <!-- 这个最外围的容器div宽度为900px，每张图宽为300px，所以只显示3张，剩下的图超出容器隐藏起来 -->  
+            <div class="imgs" style="width:50000px;"><!--这个div的作用是让所有的图片都排在同一水平上，这样子切换的时候效果会更好-->    
+            <a href="illa.html" target="_blank"><img src="img/home1.png" />  </a>
+            <a href="c4d.html" target="_blank"><img src="img/home2.png" />    </a>
+            <a href="c4d.html" target="_blank"><img src="img/home3.png" />    </a>
+            <a href="ani2.html" target="_blank"><img src="img/home4.png" />    </a>
+            <a href="daniel.html" target="_blank"><img src="img/home5.png" />    </a>
+            <a href="illa.html" target="_blank"><img src="img/home6.png" />  </a>
+            </div>   
+        </div>
+    </div>
+    <div class=buttons>    
+        <div onclick="pre()" style="float:left;margin-left:60px;cursor:pointer"><img src="img/arr_left.png"/>上一个</div>    
+        <div onclick="nex()" style="float:right;margin-right:60px;cursor:pointer">下一个<img src="img/arr_right.png"/></div>  
+    </div>
+    <a href="#ui"><img class="go_on" src="img/go_on.png"/></a>
+
+    <div class="ui" >
+        <!--UI作品-->
+        <div id="ui"><h1 >UI/UX作品</h1></div>
+        <div class="uiux1">
+            <div class=ui_card>
+                <a href="gezhi_pc.html" target="_blank">
+                    <img src="img/ui1.png">
+                    <span>
+                        <b>鸽纸电签 PC端</b>
+                        <i>已上线</i>
+                    </span>
+                        <p>SaaS<br>官网web</p>
+                    </span>
+                </a>
+            </div>
+            <div class=ui_card>
+                <a href="gezhi_app.html" target="_blank">
+                    <img src="img/ui2.png">
+                    <span>
+                        <b>鸽纸电签 无线端</b>
+                        <i>已上线</i>
+                    </span>
+                        <p>APP(iOS&Android)<br>微信小程序</p>
+                    </span>
+                </a>
+            </div>
+            <div class=ui_card>
+                <a href="gezhi_mian.html" target="_blank">
+                    <img src="img/ui3.png">
+                    <span>
+                        <b>鸽纸面签</b>
+                        <i>已上线</i>
+                    </span>
+                        <p>APP(iOS&Android)<br>官网web</p>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="uiux2">
+            <div class=ui_card>
+                <a href="gezhi_fast.html" target="_blank">
+                    <img src="img/ui4.png">
+                    <span>
+                        <b>鸽纸电签极速版</b>
+                        <i>已上线</i>
+                    </span>
+                        <p>微信小程序<br>&#160</p>
+                    </span>
+                </a>
+            </div>
+            <div class=ui_card>
+                <a href="zero.html" target="_blank">
+                    <img src="img/ui5.png">
+                    <span>
+                        <b>零视频</b>
+                        
+                    </span>
+                        <p>APP(iOS&Android)<br>web</p>
+                    </span>
+                </a>
+            </div>
+            <div class=ui_card>
+                <a href="sweet.html" target="_blank">
+                    <img src="img/ui6.png">
+                    <span>
+                        <b>甜点圈</b>
+                        
+                    </span>
+                        <p>APP(iOS&Android)<br>&#160</p>
+                    </span>
+                </a>
+            </div>
+        </div>
+
+    <div class="me" id="me">
+        <!--我的信息-->
+        <div class="left">
+            <div class="about">
+                <h1 class="abme">关于我</h1>
+                <div class="photo">
+                    <img src="img/photo.png" style="width: 165px;"/>
+                    <h2>王珺</h2>
+                </div>
+                <div class="detail">
+                    <p><img src="img/icon_job.png" style="width: 24px;"/>&#160&#160&#160&#160UI/UX设计师</p>
+                    <p><img src="img/icon_born.png" style="width: 24px;"/>&#160&#160&#160 1991.05.20</p>
+                    <p><img src="img/icon_degree.png" style="width: 24px;"/>&#160&#160&#160&#160浙江大学 设计学 硕士</p>
+                    <p><img src="img/icon_phone.png" style="width: 24px;"/>&#160&#160&#160 15700078671</p>
+                    <p><img src="img/icon_email.png" style="width: 24px;"/>&#160&#160&#160 1260792523@qq.com</p>
+                </div>
+            </div>
+            <div class="advantage">
+                <h1 class="ad">优势</h1>
+                <p>1、web、app、小程序、iPad适配全矩阵产品的交互和视觉设计成功上线经验；<br>
+                    2、B端企业级Saas产品从0到1的项目经验,能独立Owner业务的整个设计过程；<br>
+                    3、熟悉web、iOS、MD、Ant的设计规范；<br>
+                    4、热爱设计，跟进UI、UX设计的发展趋势。有良好的设计感觉，像素眼。<br>
+                    5、掌握html/css，熟悉Python.</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="ability">
+                <h1 class="skill">技能</h1>
+                <h2 class="i">UI</h2><img class="ui" src="img/skill_ui.png" style="width: 366px;"/>
+                <h2 class="x">UX</h2><img class="ux" src="img/skill_ux.png" style="width: 366px;"/>
+            </div>
+            <div class="more">
+                <div class="dri">
+                    <a href="https://dribbble.com/QiiQii" target=_blank>
+                        <p><img src="img/icon_dribbble.png" style="width: 24px;"/>&#160&#160&#160 dribbble.com/QiiQii</p>
+                    </a>
+                </div>
+                <div class="zan">
+                    <a href="https://qiiqii.zcool.com.cn/" target=_blank>
+                        <p><img src="img/icon_zanku.png" style="width: 24px;"/>&#160&#160&#160 起起QiiQii</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="c4d">
+        <!--C4D作品-->
+        <div><h1 id="c4d">C4D作品</h1></div>
+        <div class="line1">
+            <div class="c4d_card">
+                <a href="c4d.html" target="_blank">
+                    <img src="img/c4d1.png">
+                </a>
+            </div>
+            <div class="c4d_card">
+                <a href="c4d.html" target="_blank">
+                    <img src="img/c4d2.png">
+                </a>
+            </div>
+            <div class="c4d_card">
+                <a href="c4d.html" target="_blank">
+                    <img src="img/c4d3.png">
+                </a>
+            </div>
+        </div>
+        <div class="line2">
+            <div class="c4d_card">
+                <a href="c4d.html" target="_blank">
+                    <img src="img/c4d4.png">
+                </a>
+            </div>
+            <div class="c4d_card">
+                <a href="c4d.html" target="_blank">
+                    <img src="img/c4d5.png">
+                </a>
+            </div>
+            <div class="c4d_card">
+                <a href="c4d.html" target="_blank">
+                    <img src="img/c4d6.png">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="c4d">
+        <!--矢量插画-->
+        <div class="illa" id="illa"><h1>矢量插画</h1></div>
+        <div class="line1">
+            <div class="c4d_card">
+                <a href="illa.html" target=_blank>
+                    <img src="img/illa1.png">
+                </a>
+            </div>
+            <div class="c4d_card">
+                <a href="illa.html" target=_blank>
+                    <img src="img/illa2.png">
+                </a>
+            </div>
+            <div class="c4d_card">
+                <a href="illa.html" target=_blank>
+                    <img src="img/illa3.png">
+                </a>
+            </div>
+        </div>
+        <div class="line2">
+            <div class="c4d_card">
+                <a href="illa.html" target=_blank>
+                    <img src="img/illa4.png">
+                </a>
+            </div>
+            <div class="c4d_card">
+                <a href="illa.html" target=_blank>
+                    <img src="img/illa5.png">
+                </a>
+            </div>
+            <div class="c4d_card">
+                <a href="illa.html" target=_blank>
+                    <img src="img/illa6.png">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="c4d">
+        <!--动效-->
+        <div class="ani" id="ani"><h1>动效</h1></div>
+        <div class="line1">
+            <div class="c4d_card">
+                <a href="ani1.html" target=_blank>
+                    <img src="img/ani1.png">
+                </a>
+            </div>
+            <div class="c4d_card" >
+                <a href="ani2.html" target="_blank">
+                    <img src="img/ani2.png">
+                </a>
+            </div>
+            <div class="c4d_card">
+                <a href="ani3.html" target="_blank">
+                    <img src="img/ani3.png">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="paint">
+        <!--手绘作品-->
+        <div><h1 id="paint">手绘</h1></div>
+        <div class="line1">
+            <div class="paint_card">
+                    <img src="img/pai1.png">
+            </div>
+            <div class="paint_card">
+                    <img src="img/pai2.png">
+            </div>
+            <div class="paint_card">
+                    <img src="img/pai3.png">
+            </div>
+        </div>
+        <div class="line2">
+            <div class="paint_card">
+                    <img src="img/pai4.png">
+            </div>
+            <div class="paint_card">
+                    <img src="img/pai5.png">
+            </div>
+            <div class="paint_card">
+                    <img src="img/pai6.png">
+            </div>
+        </div>
+        <div class="line3">
+            <div class="paint_card" >
+                    <img src="img/pai7.png">
+            </div>
+            <div class="paint_card">
+                    <img src="img/pai8.png">
+            </div>
+            <div class="paint_card">
+                    <img src="img/pai9.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="paint">
+        <!--其他作品-->
+        <div class="oth"><h1>其他</h1></div>
+        <div class="line1">
+            <div class="paint_card">
+                    <img src="img/oth1.png">
+            </div>
+            <div class="paint_card">
+                    <img src="img/oth2.png">
+            </div>
+            <div class="paint_card">
+                    <img src="img/oth3.png">
+            </div>
+        </div>
+        <div class="line2">
+            <div class="paint_card">
+                    <img src="img/oth4.png">
+            </div>
+            <div class="paint_card">
+                    <img src="img/oth5.png">
+            </div>
+            <div class="paint_card">
+                    <img src="img/oth6.png">
+            </div>
+        </div>
+        <div class="line3">
+            <div class="paint_card">
+                    <img src="img/oth7.png">
+            </div>
+            <div class="paint_card">
+                    <img src="img/oth8.png">
+            </div>
+            <div class="paint_card">
+                    <img src="img/oth9.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="foot">
+        <!--页脚-->
+        <div>
+            <img src="img/logo.png"/>
+        </div>
+        <div class="top">
+            <a href="#nav"><p>回到顶部</p></a>
+        </div>
+        <div class="am">
+            <a href="#me"><p>联系我</p></a>
+        </div>
+        <div class="ri">
+            <p>@2020王珺所有权利保留</p>
+        </div>
+    </div>
+</body>
+</html>
