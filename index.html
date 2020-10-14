@@ -42,8 +42,8 @@
 
     <div class="home">
         <!--主页-->
-        <img class="home_bg" src="img/home_bg.png"/>
-        <div style="width:1440px;margin:auto;margin-top:23px;overflow:hidden;" > <!-- 这个最外围的容器div宽度为900px，每张图宽为300px，所以只显示3张，剩下的图超出容器隐藏起来 -->  
+        <div class="home_bg"><img src="img/home_bg.png"/></div>
+        <div class="six"> <!-- 这个最外围的容器div宽度为900px，每张图宽为300px，所以只显示3张，剩下的图超出容器隐藏起来 -->  
             <div class="imgs" style="width:50000px;"><!--这个div的作用是让所有的图片都排在同一水平上，这样子切换的时候效果会更好-->    
             <a href="illa.html" target="_blank"><img src="img/home1.png" />  </a>
             <a href="c4d.html" target="_blank"><img src="img/home2.png" />    </a>
@@ -55,13 +55,13 @@
         </div>
     </div>
     <div class=buttons>    
-        <div onclick="pre()" style="float:left;margin-left:60px;cursor:pointer"><img src="img/arr_left.png"/>上一个</div>    
-        <div onclick="nex()" style="float:right;margin-right:60px;cursor:pointer">下一个<img src="img/arr_right.png"/></div>  
+        <div onclick="pre()" style="position: absolute;left:50%;margin-left:-660px;cursor:pointer"><img src="img/arr_left.png"/>上一个</div>    
+        <div onclick="nex()" style="position: absolute;left:50%;margin-left:572px;cursor:pointer">下一个<img src="img/arr_right.png"/></div>  
     </div>
     <a href="#ui"><img class="go_on" src="img/go_on.png"/></a>
 
     <div class="ui" >
-        <!--UI作品-->
+    <!--UI/UX-->    
         <div id="ui"><h1 >UI/UX作品</h1></div>
         <div class="uiux1">
             <div class=ui_card>
@@ -163,8 +163,8 @@
         <div class="right">
             <div class="ability">
                 <h1 class="skill">技能</h1>
-                <h2 class="i">UI</h2><img class="ui" src="img/skill_ui.png" style="width: 366px;"/>
-                <h2 class="x">UX</h2><img class="ux" src="img/skill_ux.png" style="width: 366px;"/>
+                <h2 class="i">UI</h2><img class="img_ui" src="img/skill_ui.png" style="width: 366px;"/>
+                <h2 class="x">UX</h2><img class="img_ux" src="img/skill_ux.png" style="width: 366px;"/>
             </div>
             <div class="more">
                 <div class="dri">

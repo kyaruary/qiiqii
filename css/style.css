@@ -68,6 +68,14 @@ a {
     top: 127px;
     z-index: -1;
 }
+.home_bg img{
+    width: 550px;
+}
+.six{
+    width: 1440px;
+    margin: 23px auto 0 auto;
+    overflow:hidden;
+}
 .imgs img{
     height:548px;
 }
@@ -86,10 +94,11 @@ a {
     margin-top:20px;
 }
 /*ui/ux*/
-.ui h1{
-    text-align:center;
-    margin-top:240px;
+
+#ui h1{
     font-weight: 500;
+    text-align: center;
+    margin-top: 240px;
 }
 .uiux1 {
     margin:60px 0;
@@ -121,10 +130,7 @@ a {
     z-index: 0;
 }
 .ui_card:hover{
-    filter: drop-shadow(0 0px 0px #bebebe);
-    border-style:solid;
-    border-width:1px;
-    border-color: #285CFF;
+    filter: drop-shadow(0 0px 2px #285cff);
 }
 b {
     font-size: 24px;
@@ -137,7 +143,7 @@ i {
     color:#999999;
     margin-left: 12px;
 }
-p {
+.ui_card p {
     margin-left:24px;
     margin-bottom: 16px;
 }
@@ -146,7 +152,7 @@ p {
     width: 1046px;
     height:627px;
     position: absolute;
-    top:2020px;
+    top:2050px;
     left:50%;
     margin-left:-523px;
 }
@@ -165,9 +171,10 @@ p {
 .abme{
     position: absolute;
     left:24px;
-    top:-220px;
+    top: 20px;
     font-size: 24px;
     color:#285CFF;
+    font-weight: 500;
 }
 .photo {
     width: 165px;
@@ -183,6 +190,12 @@ p {
     margin-right:80px;
     margin-top:-290px;
 }
+.detail p{
+    line-height: 45px;
+}
+.detail img{
+    vertical-align:-6px;
+}
 .advantage {
     width: 504px;
     height:320px;
@@ -194,13 +207,15 @@ p {
 .ad{
     position: absolute;
     left:24px;
-    top:-220px;
+    top:20px;
     font-size: 24px;
     color:#285CFF;
+    font-weight: 500;
 }
 .advantage p{
     padding-top:60px;
     padding-right:24px;
+    padding-left:24px;
     line-height: 30px;
 }
 .right {
@@ -219,14 +234,15 @@ p {
 .skill{
     position: absolute;
     left:24px;
-    top:-220px;
+    top:20px;
     font-size: 24px;
     color:#285CFF;
+    font-weight: 500;
 }
 .i{
     position: absolute;
     left:24px;
-    top:150px;
+    top:140px;
     font-weight:400;
 }
 .x{
@@ -235,12 +251,12 @@ p {
     top:340px;
     font-weight:400;
 }
-.ui{
+.img_ui{
     margin:80px 10px 10px 80px;
     left:100px;
     top:80px;
 }
-.ux{
+.img_ux{
     position:absolute;
     left:80px;
     top:280px;
@@ -257,7 +273,13 @@ p {
 .dri {
     position:absolute;
     left:24px;
-    top:32px;
+    top:28px;
+}
+.dri p{
+    line-height: 32px;
+}
+.dri img{
+    vertical-align: -6px;
 }
 .dri p:hover {
     color:#285CFF;
@@ -265,7 +287,13 @@ p {
 .zan {
     position:absolute;
     left:290px;
-    top:32px;
+    top:28px;
+}
+.zan p{
+    line-height: 32px;
+}
+.zan img{
+    vertical-align: -6px;
 }
 .zan p:hover {
     color:#285CFF;
@@ -278,21 +306,12 @@ p {
     font-weight: 500;
 }
 .line1 {
-    margin:0;
-    width: 1440px;
-    height:428px;
-    position: absolute;
-    left:50%;
-    margin-left:-600px;
-    margin-top:40px;
+    width:1224px;
+    margin:40px auto 0px auto; 
 }
 .line2 {
-    margin-top:286px;
-    width: 1440px;
-    height:428px;
-    position: absolute;
-    left:50%;
-    margin-left:-600px;
+    width:1224px;
+    margin:0px auto; 
 }
 .c4d_card{
     margin:12px;
@@ -303,11 +322,7 @@ p {
     filter: drop-shadow(0 10px 30px #dfdfdf);
 }
 .c4d_card:hover{
-    background-color: white;
-    filter: drop-shadow(0 0px 0px #bebebe);
-    border-style:solid;
-    border-width:1px;
-    border-color: #285CFF;
+    filter: drop-shadow(0 0px 2px #285cff);
 }
 .c4d img{
     padding:12px;
@@ -332,22 +347,14 @@ p {
     font-weight: 500;
 }
 .paint .line1 {
-    margin:0;
-    width: 1440px;
-    height:384px;
-    position: absolute;
-    left:50%;
-    margin-left:-600px;
-    margin-top:40px;
+    width:1224px;
+    margin:40px auto 0px auto; 
 }
-.paint .line2 {
-    margin-top:448px;
-    width: 1440px;
-    height:384px;
-    position: absolute;
-    left:50%;
-    margin-left:-600px;
+.paint .line2,.paint .line3{
+    width:1224px;
+    margin:0px auto; 
 }
+
 .paint_card{
     margin:12px;
     float:left;
@@ -367,14 +374,7 @@ p {
     margin-top:1440px;
     font-weight: 500;
 }
-.paint .line3 {
-    margin-top:857px;
-    width: 1440px;
-    height:384px;
-    position: absolute;
-    left:50%;
-    margin-left:-600px;
-}
+
 /*页脚*/
 .foot{
     margin: 1400px 0 0 0;
